@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/PantryFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/enterButton"
+        android:layout_width="214dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="384dp"
+        android:text="@string/enter"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/quantityBox"
+        android:layout_width="130dp"
+
+        android:layout_height="45dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="115dp"
+        android:hint="Quantity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/unitsBox"
+        android:layout_width="130dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="190dp"
+        android:hint="Units"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/ingredientBox"
+        android:layout_width="130dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="265dp"
+        android:hint="@string/ingredient"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

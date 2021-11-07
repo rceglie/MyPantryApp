@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+            app:startDestination="@id/FirstFragment">
+
+            <fragment
+                android:id="@+id/FirstFragment"
+                android:name="com.example.mypantryapp.GetCookin"
+                android:label="@string/get_cookin"
+                tools:layout="@layout/fragment_first">
+
+                <action
+                    android:id="@+id/action_FirstFragment_to_SecondFragment"
+                    app:destination="@id/SecondFragment" />
+
+                <action
+                    android:id="@+id/action_FirstFragment_to_ThirdFragment"
+                    app:destination="@id/ThirdFragment" />
+
+                <action
+                    android:id="@+id/action_displayRecipe"
+                    app:destination="@id/RecipeDisplay" />
+            </fragment>
+
+            <fragment
+                android:id="@+id/SecondFragment"
+                android:name="com.example.mypantryapp.MyPantry"
+                android:label="@string/my_pantry"
+                tools:layout="@layout/fragment_second">
+
+                <action
+                    android:id="@+id/action_SecondFragment_to_FirstFragment"
+                    app:destination="@id/FirstFragment" />
+
+                <action
+                    android:id="@+id/action_SecondFragment_to_ThirdFragment"
+                    app:destination="@id/ThirdFragment" />
+
+                <action
+                    android:id="@+id/action_AddtoPantry"
+                    app:destination="@id/PantryFragment"/>
+
+            </fragment>
+
+            <fragment
+                android:id="@+id/ThirdFragment"
+                android:name="com.example.mypantryapp.MyRecipes"
+                android:label="@string/my_recipes"
+                tools:layout="@layout/fragment_third">
+
+                <action
+                    android:id="@+id/action_ThirdFragment_to_FirstFragment"
+                    app:destination="@id/FirstFragment" />
+
+                <action
+                    android:id="@+id/action_ThirdFragment_to_SecondFragment"
+                    app:destination="@id/SecondFragment" />
+
+                <action
+                    android:id="@+id/action_AddtoRecipes"
+                    app:destination="@id/Recipe1" />
+
+                <action
+                    android:id="@+id/action_displayRecipe"
+                    app:destination="@id/RecipeDisplay" />
+            </fragment>
+
+            <fragment
+                android:id="@+id/PantryFragment"
+                android:name="com.example.mypantryapp.PantryList"
+                android:label="@string/pantry_list"
+                tools:layout="@layout/fragment_pantry">
+
+                <action
+                    android:id="@+id/action_BacktoPantry"
+                    app:destination="@id/SecondFragment" />
+
+            </fragment>
+
+            <fragment
+                android:id="@+id/Recipe1"
+                android:name="com.example.mypantryapp.RecipeTitle"
+                android:label="@string/confirm_title"
+                tools:layout="@layout/fragment_recipe">
+
+                <action
+                    android:id="@+id/action_toRecipeIngredients"
+                    app:destination="@id/Recipe2" />
+            </fragment>
+
+    <fragment
+        android:id="@+id/Recipe2"
+        android:name="com.example.mypantryapp.RecipeIngredient"
+        android:label="@string/confirm_ingredients"
+        tools:layout="@layout/fragment_ingredients" >
+
+        <action
+            android:id="@+id/action_toRecipeNotes"
+            app:destination="@id/Recipe3"/>
+
+        <action
+            android:id="@+id/action_AddtoRecipe"
+            app:destination="@id/RecipeItem"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/Recipe3"
+        android:name="com.example.mypantryapp.RecipeNotes"
+        android:label="@string/confirm_notes"
+        tools:layout="@layout/fragment_notes">
+
+        <action
+            android:id="@+id/action_BacktoRecipes"
+            app:destination="@id/ThirdFragment"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/RecipeItem"
+        android:name="com.example.mypantryapp.RecipeAddIngredient"
+        android:label="@string/ingredient"
+        tools:layout="@layout/fragment_item">
+
+        <action
+            android:id="@+id/action_BacktoConfirmItem"
+            app:destination="@id/Recipe2" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/RecipeDisplay"
+        android:name="com.example.mypantryapp.RecipeDisplay"
+        android:label="Recipe"
+        tools:layout="@layout/recipe_display">
+
+        <action
+            android:id="@+id/action_closeDisplayRecipe"
+            app:destination="@id/FirstFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/RecipeDisplay2"
+        android:name="com.example.mypantryapp.RecipeDisplay2"
+        android:label="Recipe"
+        tools:layout="@layout/recipe_display2">
+
+        <action
+            android:id="@+id/action_closeDisplayRecipe2"
+            app:destination="@id/FirstFragment"/>
+    </fragment>
+
+</navigation>

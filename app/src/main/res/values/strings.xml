@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">MyPantry App</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="get_cookin">Get Cookin\'</string>
+    <string name="recipe_book">GET COOKIN\'</string>
+    <string name="my_pantry">My Pantry</string>
+    <string name="my_recipes">My Recipes</string>
+    <string name="previous">Previous</string>
+    <string name="plus">+</string>
+    <string name="pantry_list">Ingredient to Add</string>
+    <string name="enter">ADD TO PANTRY</string>
+    <string name="confirm_title">Confirm Title</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="ingredient">Ingredient</string>
+    <string name="confirm_ingredients">Confirm Ingredients</string>
+    <string name="confirm_notes">Confirm Notes</string>
+    <string name="notes">Notes</string>
+    <string name="add_to_recipe">Add to Recipe</string>
+    <string name="prompt1">You have no recipes! Add a recipe using the \'+\' symbol to the right!</string>
+    <string name="prompt2">Your recipe has no ingredients! Add some with the \'+\' symbol to the right!</string>
+    <string name="available_recipes">Available Recipes with Current Pantry</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>
